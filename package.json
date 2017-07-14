@@ -1,12 +1,15 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "@dschau/gatsby-blog-starter-kit",
+  "description": "Gatsby blog starter example",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dustin Schau <dustinschau@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.0.1",
+    "gatsby": "1.0.5",
     "gatsby-link": "^1.0.1",
-    "gatsby-plugin-react-helmet": "^1.0.1"
+    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-source-filesystem": "~1.0.1",
+    "gatsby-transformer-remark": "~1.1.0",
+    "react-icons": "~2.2.5"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
@@ -20,7 +23,10 @@
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
+    "preserve": "npm run build",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Should probably write some tests!\""
   }
 }

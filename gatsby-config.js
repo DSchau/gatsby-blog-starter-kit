@@ -1,6 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    author: 'You!',
+    title: `Gatsby Default (Blog) Starter`,
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {}
+    },
+    `gatsby-plugin-react-helmet`,
+  ],
 }
