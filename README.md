@@ -1,10 +1,11 @@
-# gatsby-starter-default
-The default Gatsby starter
+# gatsby-blog-starter-kit
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
-## Deploy
+Use this starter kit to jump start (or use as a reference) a great blog with [gatsby][gatsby]
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Set up
+
+1. Clone this repo
+1. `yarn`
+1. `yarn start`
+
+[gatsby]: https://www.gatsbyjs.org/
