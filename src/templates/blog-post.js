@@ -4,6 +4,7 @@ import BackIcon from 'react-icons/lib/fa/chevron-left';
 import ForwardIcon from 'react-icons/lib/fa/chevron-right';
 
 import Link from '../components/Link';
+import Tags from '../components/tags';
 
 import '../css/blog-post.css';
 
@@ -20,6 +21,7 @@ export default function Template({
         <h1 className="title" >{post.frontmatter.title}</h1>
         <h2 className="date" >{post.frontmatter.date}</h2>
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Tags list={post.frontmatter.tags || []} />
         {prev && <Link className="link prev" to={prev.frontmatter.path}><BackIcon /> {prev.frontmatter.title}</Link>}
         {next && <Link className="link next" to={next.frontmatter.path}>{next.frontmatter.title} <ForwardIcon /></Link>}
       </div>
@@ -34,6 +36,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
+        tags
         title
       }
     }
