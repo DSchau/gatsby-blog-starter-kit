@@ -6,6 +6,7 @@
   "dependencies": {
     "gatsby": "1.0.5",
     "gatsby-link": "^1.0.1",
+    "gatsby-plugin-catch-links": "~1.0.1",
     "gatsby-plugin-react-helmet": "^1.0.1",
     "gatsby-source-filesystem": "~1.0.1",
     "gatsby-transformer-remark": "~1.1.0",

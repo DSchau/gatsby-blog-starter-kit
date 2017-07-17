@@ -4,6 +4,7 @@ module.exports = {
     title: `Gatsby Default (Blog) Starter`,
   },
   plugins: [
+    'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
