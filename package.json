@@ -15,7 +15,8 @@
     "react-icons": "~2.2.5"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0"
+    "gh-pages": "^0.12.0",
+    "prettier": "/Users/dschau1.5.3"
   },
   "keywords": [
     "gatsby"
@@ -29,7 +30,7 @@
     "preserve": "npm run build",
     "serve": "gatsby serve",
     "start": "npm run develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
+    "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Should probably write some tests!\""
   }
 }
