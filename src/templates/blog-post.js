@@ -22,8 +22,10 @@ export default function Template({
         <h2 className="date" >{post.frontmatter.date}</h2>
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
         <Tags list={post.frontmatter.tags || []} />
-        {prev && <Link className="link prev" to={prev.frontmatter.path}><BackIcon /> {prev.frontmatter.title}</Link>}
-        {next && <Link className="link next" to={next.frontmatter.path}>{next.frontmatter.title} <ForwardIcon /></Link>}
+        <div className="navigation">
+          {prev && <Link className="link prev" to={prev.frontmatter.path}><BackIcon /> {prev.frontmatter.title}</Link>}
+          {next && <Link className="link next" to={next.frontmatter.path}>{next.frontmatter.title} <ForwardIcon /></Link>}
+        </div>
       </div>
     </div>
   );

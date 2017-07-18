@@ -5,9 +5,10 @@ import '../css/link.css';
 
 export default function Link({
   children,
+  className,
   to
 }) {
   return (
-    <GatsbyLink className="link" to={to}>{children}</GatsbyLink>
+    <GatsbyLink className={[`link`].concat(className || []).join(' ')} to={to}>{children}</GatsbyLink>
   )
 }
