@@ -2,7 +2,7 @@
 
 Use this starter kit to jump start (or use as a reference) a great blog with [gatsby][gatsby]
 
-![Blog example](https://dustinschau.com/drop/images/gatsby-blog-starter-kit.png)
+![Blog example](https://dustinschau.com/drop/gatsby-blog-starter-kit.png)
 
 ## Features
 
