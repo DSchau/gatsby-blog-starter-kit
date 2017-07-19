@@ -11,12 +11,6 @@ export default function Index({ data }) {
   return (
     <div className="blog-posts">
       {posts
-        .sort((a, b) => {
-          const getDate = post => new Date(post.node.frontmatter.date);
-
-          return getDate(a) - getDate(b);
-        })
-        .reverse()
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
@@ -42,7 +36,7 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           excerpt(pruneLength: 250)
