@@ -4,7 +4,7 @@ import BackIcon from 'react-icons/lib/fa/chevron-left';
 import ForwardIcon from 'react-icons/lib/fa/chevron-right';
 
 import Link from '../components/Link';
-import Tags from '../components/tags';
+import Tags from '../components/Tags';
 
 import '../css/blog-post.css';
 
