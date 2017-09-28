@@ -1,5 +1,7 @@
 # gatsby-blog-starter-kit
 
+[![Build Status](https://travis-ci.org/DSchau/gatsby-blog-starter-kit.svg?branch=master)](https://travis-ci.org/DSchau/gatsby-blog-starter-kit)
+
 Use this starter kit to jump start (or use as a reference) a great blog with [gatsby][gatsby]
 
 ![Blog example](https://dustinschau.com/drop/gatsby-blog-starter-kit.png)
