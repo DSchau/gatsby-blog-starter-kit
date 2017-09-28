@@ -1,5 +1,5 @@
 {
-  "name": "@dschau/gatsby-blog-starter-kit",
+  "name": "gatsby-blog-starter-kit",
   "description": "Gatsby blog starter example",
   "version": "1.0.0",
   "author": "Dustin Schau <dustinschau@gmail.com>",
@@ -28,7 +28,8 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths",
+    "postdeploy": "gh-pages -d public",
     "develop": "gatsby develop",
     "preserve": "npm run build",
     "serve": "gatsby serve",
