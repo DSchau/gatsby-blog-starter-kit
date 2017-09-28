@@ -1,7 +1,7 @@
 {
   "name": "gatsby-blog-starter-kit",
   "description": "Gatsby blog starter example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Dustin Schau <dustinschau@gmail.com>",
   "dependencies": {
     "gatsby": "~1.9.45",
