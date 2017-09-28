@@ -1,5 +1,7 @@
 # gatsby-blog-starter-kit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/DSchau/gatsby-blog-starter-kit.svg)](https://greenkeeper.io/)
+
 Use this starter kit to jump start (or use as a reference) a great blog with [gatsby][gatsby]
 
 ![Blog example](https://dustinschau.com/drop/gatsby-blog-starter-kit.png)
