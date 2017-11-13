@@ -13,7 +13,7 @@
     "gatsby-remark-images": "~1.5.13",
     "gatsby-source-filesystem": "~1.5.1",
     "gatsby-transformer-remark": "~1.7.12",
-    "react": "~16.0.0",
+    "react": "~16.1.0",
     "react-dom": "~16.1.0",
     "react-icons": "~2.2.5"
   },
