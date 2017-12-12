@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "gh-pages": "~1.0.0",
-    "prettier": "~1.8.0"
+    "prettier": "~1.9.2"
   },
   "keywords": [
     "gatsby"
