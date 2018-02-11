@@ -18,8 +18,8 @@
     "react-icons": "~2.2.5"
   },
   "devDependencies": {
-    "gh-pages": "~1.0.0",
-    "prettier": "~1.8.0"
+    "gh-pages": "1.0.0",
+    "prettier": "1.8.2"
   },
   "keywords": [
     "gatsby"
