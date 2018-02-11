@@ -1,7 +1,4 @@
-const { name } = require('./package.json');
-
 module.exports = {
-  pathPrefix: process.env.CI ? `/${name}` : `/`,
   siteMetadata: {
     author: 'You!',
     title: `Gatsby Default (Blog) Starter`,
