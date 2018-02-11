@@ -29,7 +29,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "npm run build",
+    "deploy": "gatsby build --prefix-paths",
     "postdeploy": "gh-pages -d public",
     "develop": "gatsby develop",
     "preserve": "npm run build",
