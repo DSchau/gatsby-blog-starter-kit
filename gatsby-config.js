@@ -1,5 +1,3 @@
-const { name } = require('./package.json');
-
 module.exports = {
   pathPrefix: process.env.CI ? `/${name}` : `/`,
   siteMetadata: {
@@ -12,8 +10,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
+        path: `${__dirname}/blog`,
+        name: 'blog',
       },
     },
     {
