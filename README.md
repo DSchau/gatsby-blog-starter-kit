@@ -20,4 +20,4 @@ Use this starter kit to jump start (or use as a reference) a great blog with [ga
 1. `yarn start`
 
 [gatsby]: https://www.gatsbyjs.org/
-[gatsby-remark-images]: https://www.gatsbyjs.org/docs/packages/gatsby-remark-images/
+[gatsby-remark-images]: https://www.gatsbyjs.org/packages/gatsby-remark-images/
