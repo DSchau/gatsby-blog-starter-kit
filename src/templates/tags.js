@@ -3,12 +3,13 @@ import GatsbyLink from 'gatsby-link';
 import HomeIcon from 'react-icons/lib/fa/home';
 import TagsIcon from 'react-icons/lib/fa/tags';
 
+
+import Layout from '../components/Layout';
 import Link from '../components/Link';
 
 import '../css/tags.css';
 
-export default function Tags({ pathContext }) {
-  const { posts, post, tag } = pathContext;
+function Tags({ posts, post, tag }) {
   if (tag) {
     return (
       <div>
@@ -41,20 +42,22 @@ export default function Tags({ pathContext }) {
     <div>
       <h1>Tags</h1>
       <ul className="tags">
-        {Object.keys(posts).map(tagName => {
-          const tags = posts[tagName];
-          return (
-            <li key={tagName}>
+        {Object.keys(posts).map(tagName => <li key={tagName}>
               <GatsbyLink to={`/tags/${tagName}`}>
                 {tagName}
               </GatsbyLink>
-            </li>
-          );
-        })}
+            </li>)}
       </ul>
       <Link to="/">
         <HomeIcon /> All posts
       </Link>
     </div>
+  );
+}
+
+export default function TagsTemplate(props) {
+  const { pageContext } = props;
+  return (
+    <Layout {...props}><Tags {...pageContext} /></Layout>
   );
 }

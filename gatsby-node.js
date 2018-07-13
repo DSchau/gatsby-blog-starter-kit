@@ -40,8 +40,8 @@ const createTagPages = (createPage, edges) => {
     });
 };
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
   return graphql(`{
@@ -76,8 +76,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     // Create pages for each markdown file.
     posts.forEach(({ node }, index) => {
-      const prev = index === 0 ? false : posts[index - 1].node;
-      const next = index === posts.length - 1 ? false : posts[index + 1].node;
+      const prev = index === 0 ? null : posts[index - 1].node;
+      const next = index === posts.length - 1 ? null : posts[index + 1].node;
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
