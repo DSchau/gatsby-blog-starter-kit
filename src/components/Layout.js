@@ -58,7 +58,7 @@ export default class Template extends React.Component {
             paddingTop: 0,
           }}
         >
-          {this.props.children()}
+          {this.props.children}
         </div>
       </div>
     );
