@@ -19,6 +19,8 @@
     "react-icons": "~2.2.5"
   },
   "devDependencies": {
+    "gatsby-plugin-manifest": "~2.0.2-beta.3",
+    "gatsby-plugin-offline": "~2.0.0-beta.6",
     "gh-pages": "1.1.0",
     "prettier": "1.10.2"
   },
