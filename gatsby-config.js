@@ -8,6 +8,19 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Blog Starter',
+        short_name: 'Blog',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'assets/logo.jpg',
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

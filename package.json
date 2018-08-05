@@ -5,9 +5,11 @@
   "author": "Dustin Schau <dustinschau@gmail.com> (https://dustinschau.com)",
   "repository": "https://github.com/dschau/gatsby-blog-starter-kit",
   "dependencies": {
-    "gatsby": "2.0.0-beta.34",
+    "gatsby": "~2.0.0-beta.69",
     "gatsby-link": "2.0.0-beta.4",
     "gatsby-plugin-catch-links": "2.0.2-beta.2",
+    "gatsby-plugin-manifest": "~2.0.2-beta.3",
+    "gatsby-plugin-offline": "~2.0.0-beta.6",
     "gatsby-plugin-react-helmet": "3.0.0-beta.3",
     "gatsby-plugin-sharp": "2.0.0-beta.5",
     "gatsby-remark-images": "2.0.1-beta.6",
