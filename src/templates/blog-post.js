@@ -18,7 +18,7 @@ export default function Template(props) {
     <Layout {...props}>
       <div className="blog-post-container">
         <Helmet title={`Gatsby Blog - ${post.frontmatter.title}`} />
-        <div className="blog-post">
+        <article className="blog-post">
           <h1 className="title">
             {post.frontmatter.title}
           </h1>
@@ -40,7 +40,7 @@ export default function Template(props) {
                 {next.frontmatter.title} <ForwardIcon />
               </Link>}
           </div>
-        </div>
+        </article>
       </div>
     </Layout>
   );
