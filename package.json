@@ -15,8 +15,8 @@
     "gatsby-remark-images": "2.0.1-beta.6",
     "gatsby-source-filesystem": "2.0.1-beta.3",
     "gatsby-transformer-remark": "2.1.1-beta.3",
-    "react": "~16.3.0",
-    "react-dom": "~16.3.0",
+    "react": "~17.0.0",
+    "react-dom": "~17.0.0",
     "react-helmet": "~5.2.0",
     "react-icons": "~2.2.5"
   },
