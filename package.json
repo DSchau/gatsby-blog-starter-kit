@@ -21,7 +21,7 @@
     "react-icons": "~2.2.5"
   },
   "devDependencies": {
-    "gh-pages": "1.1.0",
+    "gh-pages": "3.2.3",
     "prettier": "1.10.2"
   },
   "keywords": [
